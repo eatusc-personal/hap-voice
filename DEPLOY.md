@@ -11,7 +11,7 @@ Studio), reachable by Twilio for real calls + texts.
 |---|---|
 | Server user | `YOUR_USER` (home `/Users/YOUR_USER`) |
 | App directory | `/Users/YOUR_USER/code/hap-voice` |
-| Port | `3010` (must be free on the server — pick another if taken) |
+| Port | `3010` (must be free on the server - pick another if taken) |
 | Public URL | `https://voice.helpaproduct.com` via a Cloudflare Tunnel |
 | CPU | Apple Silicon (Homebrew at `/opt/homebrew`) |
 
@@ -101,12 +101,12 @@ DATABASE_URL=postgres://localhost:5432/hap_voice
 PORT=3010
 PUBLIC_HOST=voice.helpaproduct.com      # your stable tunnel hostname (Step 9)
 
-# Dashboard auth (REQUIRED) — gates the console; leave empty and nobody can log in.
+# Dashboard auth (REQUIRED) - gates the console; leave empty and nobody can log in.
 # The telephony webhooks stay open regardless, so calls/texts keep working.
 DASHBOARD_PASSWORD=<pick a strong password>
 # DASHBOARD_SESSION_SECRET=<optional long random string>
 
-# Twilio (signature validation — see Step 12)
+# Twilio (signature validation - see Step 12)
 TWILIO_AUTH_TOKEN=<your twilio auth token>
 TWILIO_SKIP_VALIDATION=false
 
@@ -119,7 +119,7 @@ STT_PROVIDER=whisper
 WHISPER_CLI=/opt/homebrew/bin/whisper-cli
 WHISPER_MODEL=./models/ggml-small.en.bin
 
-# Text-to-speech (ElevenLabs — natural voice)
+# Text-to-speech (ElevenLabs - natural voice)
 TTS_PROVIDER=elevenlabs
 ELEVENLABS_API_KEY=<your key>
 ELEVENLABS_VOICE_ID=EXAVITQu4vr4xnSDxMaL   # a voice available in the account (this = "Sarah")
@@ -127,10 +127,10 @@ ELEVENLABS_MODEL=eleven_flash_v2_5
 
 # Persona
 BUSINESS_NAME=HelpAProduct
-ASSISTANT_GREETING=Thanks for calling HelpAProduct. This is the assistant — who am I speaking with?
+ASSISTANT_GREETING=Thanks for calling HelpAProduct. This is the assistant - who am I speaking with?
 
 # Voice provider: local (self-hosted pipeline) or retell (hosted agent).
-# Boot default only — switchable live from the Settings page. See RETELL.md.
+# Boot default only - switchable live from the Settings page. See RETELL.md.
 VOICE_PROVIDER=local
 RETELL_API_KEY=<your retell key>        # the only required Retell entry
 RETELL_AGENT_ID=                        # optional; Settings can auto-create the agent
@@ -195,10 +195,10 @@ tail -f /Users/YOUR_USER/code/hap-voice/hapvoice.log                     # watch
 
 ---
 
-## 9. Public URL — Cloudflare Tunnel (free, stable, handles the websocket)
+## 9. Public URL - Cloudflare Tunnel (free, stable, handles the websocket)
 
 Requires `helpaproduct.com`'s DNS to be on Cloudflare. (No domain on Cloudflare?
-Use an ngrok reserved domain instead — see bottom.)
+Use an ngrok reserved domain instead - see bottom.)
 
 ```bash
 cloudflared tunnel login                       # opens browser; pick the domain
