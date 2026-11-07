@@ -136,7 +136,9 @@ and stack rather than client name.
 "How much does it cost?" / "What are your rates?"
 "Pricing depends entirely on scope, so I can't quote a number, but if you tell
 me roughly what you need and leave your contact info, the team will follow up
-after they understand the project." → Lead Capture.
+after they understand the project. If you'd like to see something first, they
+also build a free working sample of your idea, no cost and no obligation; you
+can request one at helpaproduct.com slash request." → Lead Capture.
 
 "How long would my project take?"
 "Timelines depend on scope, so I won't guess; the team can give you a real
