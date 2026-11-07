@@ -1,6 +1,6 @@
 # hap-voice
 
-[![CI](https://github.com/eatusc/hap-voice/actions/workflows/ci.yml/badge.svg)](https://github.com/eatusc/hap-voice/actions/workflows/ci.yml)
+[![CI](https://github.com/eatusc-personal/hap-voice/actions/workflows/ci.yml/badge.svg)](https://github.com/eatusc-personal/hap-voice/actions/workflows/ci.yml)
 
 An AI voice receptionist for a Twilio phone number. It answers calls, has a
 natural spoken conversation, screens who's calling and why, takes a message,

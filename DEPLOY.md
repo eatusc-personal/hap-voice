@@ -60,7 +60,7 @@ Verify: `node -v` (want v20+), `whisper-cli --help | head -1`, `psql -c 'select 
 ```bash
 mkdir -p /Users/YOUR_USER/code
 cd /Users/YOUR_USER/code
-git clone https://github.com/eatusc/hap-voice.git
+git clone https://github.com/eatusc-personal/hap-voice.git
 cd hap-voice
 npm install
 ```
