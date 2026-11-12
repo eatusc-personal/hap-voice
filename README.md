@@ -6,6 +6,9 @@ An AI voice receptionist for a Twilio phone number. It answers calls, has a
 natural spoken conversation, screens who's calling and why, takes a message,
 flags spam/robocalls, and logs everything to a dashboard.
 
+**Try it:** call **(213) 410-2118**. It answers the HelpAProduct business line
+and can tell you about the company and its work.
+
 Built to be **self-hosted and free** wherever possible. The only paid piece is
 the LLM (OpenRouter), and even that can be swapped for a local model (Ollama)
 later.
