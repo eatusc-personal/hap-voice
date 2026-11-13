@@ -7,9 +7,6 @@ HelpAProduct (HAP). It answers calls, has a natural spoken conversation, screens
 who's calling and why, takes a message, flags spam and robocalls, and logs
 everything to a dashboard.
 
-**Try it:** call **(213) 410-2118**. It answers the HelpAProduct business line
-and can tell you about the company and its work.
-
 Built to be **self-hosted and free** wherever possible: the codec, VAD, and
 speech-to-text run locally, and text-to-speech can too. The paid pieces are
 Twilio, the LLM (OpenRouter, any model you choose), and ElevenLabs or Retell AI
