@@ -2,16 +2,18 @@
 
 [![CI](https://github.com/eatusc-personal/hap-voice/actions/workflows/ci.yml/badge.svg)](https://github.com/eatusc-personal/hap-voice/actions/workflows/ci.yml)
 
-An AI voice receptionist for a Twilio phone number. It answers calls, has a
-natural spoken conversation, screens who's calling and why, takes a message,
-flags spam/robocalls, and logs everything to a dashboard.
+An AI voice receptionist for a Twilio phone number, built for and in use at
+HelpAProduct (HAP). It answers calls, has a natural spoken conversation, screens
+who's calling and why, takes a message, flags spam and robocalls, and logs
+everything to a dashboard.
 
 **Try it:** call **(213) 410-2118**. It answers the HelpAProduct business line
 and can tell you about the company and its work.
 
-Built to be **self-hosted and free** wherever possible. The only paid piece is
-the LLM (OpenRouter), and even that can be swapped for a local model (Ollama)
-later.
+Built to be **self-hosted and free** wherever possible: the codec, VAD, and
+speech-to-text run locally, and text-to-speech can too. The paid pieces are
+Twilio, the LLM (OpenRouter, any model you choose), and ElevenLabs or Retell AI
+if you opt into them.
 
 ## The pipeline
 
@@ -152,7 +154,7 @@ local pipeline if Retell is down. Details: **[RETELL.md](RETELL.md)**.
 The TTS provider is also switchable live from the Settings page; it takes effect
 on the next sentence the assistant speaks, no restart needed.
 
-## Porting off localhost later
+## Running on another host
 
 Everything is local-first by design. To move to a server:
 
@@ -227,3 +229,7 @@ npm test              # unit tests (vitest): µ-law codec, resampler, VAD, auth
 npm run typecheck     # tsc --noEmit
 npm run lint          # eslint
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
